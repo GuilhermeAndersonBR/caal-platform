@@ -1,0 +1,54 @@
+name: Relatório de bug
+description: Relatar um comportamento incorreto
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Descrição
+      description: O que está acontecendo?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Como reproduzir
+      placeholder: |
+        1. Execute...
+        2. Envie...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento observado
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Versão, serviço e contexto relevantes
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs sanitizados
+      description: Remova tokens, senhas e dados pessoais antes de publicar.
+    validations:
+      required: false

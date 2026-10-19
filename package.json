@@ -1,0 +1,26 @@
+{
+    "name": "caal-platform",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "dev": "pnpm -r --parallel --if-present dev",
+        "build": "pnpm -r --if-present build",
+        "typecheck": "pnpm -r --if-present typecheck",
+        "lint": "pnpm -r --if-present lint",
+        "test": "pnpm -r --if-present test",
+        "clean": "pnpm -r --if-present clean"
+    },
+    "keywords": [],
+    "author": "GuilhermeAndersonBR",
+    "license": "MIT",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "12.5.1",
+            "onFail": "download"
+        }
+    },
+    "packageManager": "pnpm@12.5.1",
+    "type": "module"
+}

@@ -1,0 +1,56 @@
+name: Nova funcionalidade
+description: Propor uma funcionalidade para o CAAL
+title: "[FEATURE]"
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Qual necessidade esta funcionalidade resolve?
+      placeholder: Como usuário, preciso...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução proposta
+      description: Descreva o comportamento esperado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceitação
+      description: Liste resultados verificáveis.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domínio afetado
+      options:
+        - Identidade
+        - Reclamações
+        - Instituições
+        - Notificações
+        - Infraestrutura
+        - Documentação
+        - Outro
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Riscos e dependências
+      description: Existem impactos em outros serviços, dados ou contratos?
+    validations:
+      required: false
